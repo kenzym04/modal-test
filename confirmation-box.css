@@ -1,0 +1,40 @@
+.confirmation-box-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: fade-in 0.5s;
+  user-select: none;
+}
+
+.confirmation-box-overlay .confirmation-box {
+  width: 90vw;
+  max-width: 600px;
+  background-color: white;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 5rem;
+}
+
+.confirmation-box-overlay .confirmation-box p {
+  font-size: 1.4em;
+}
+
+.confirmation-box-overlay .confirmation-box p, .confirmation-box-overlay .confirmation-box .actions {
+  text-align: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
