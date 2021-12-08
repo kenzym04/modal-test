@@ -1,3 +1,7 @@
+# Path to Test Script: 
+
+modal-test/Cypress-framework/cypress/integration/e2e test/confirmation.js
+
 # How to Run the Tests
 
 1. Install Wampserver, Node.js and Cypress
